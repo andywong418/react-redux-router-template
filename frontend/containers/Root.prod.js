@@ -3,10 +3,10 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import AppContainer from './AppContainer.js';
 
-export default function Root({ store }) {
+export default function Root({ store, history }) {
     return (
         <Provider store={store}>
-            <AppContainer />
+            <AppContainer store={store} history={history} />
         </Provider>
     );
 }
