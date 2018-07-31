@@ -1,14 +1,11 @@
-import Proptypes from 'prop-types';
-import React from 'react';
-import { connect } from 'react-redux';
-import {Link} from 'react-router-dom';
+import Proptypes from 'prop-types'
+import React from 'react'
+import { connect } from 'react-redux'
+import {Link} from 'react-router-dom'
 class AnotherPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
-  render() {
-    return(
+  render () {
+    return (
       <div>
         <h3> Just another page </h3>
         <Link to={'/'}> Back Home </Link>
@@ -17,4 +14,4 @@ class AnotherPage extends React.Component {
   }
 }
 
-export default AnotherPage;
+export default AnotherPage

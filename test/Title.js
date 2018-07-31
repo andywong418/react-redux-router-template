@@ -1,19 +1,19 @@
-import React from 'react';
-import expect from 'expect';
-import { shallow } from 'enzyme';
+import React from 'react'
+import expect from 'expect'
+import { shallow } from 'enzyme'
 
-import Title from '../frontend/components/Title';
+import Title from '../frontend/components/Title'
 
-describe('Component: App', () => {
-  it('should render the App component', () => {
+describe ('Component: App', () => {
+  it ('should render the App component', () => {
     const wrapper = shallow(
-      <Title name="Horizons" />
-    );
+      <Title name="Title" />
+    )
 
-    expect(wrapper.find('h1').text()).toEqual('Horizons');
-  });
+    expect(wrapper.find('h1').text()).toEqual('Title')
+  })
 
-  it('should run a solid smoke test', () => {
-    expect(true).toEqual(true);
-  });
-});
+  it ('should run a solid smoke test', () => {
+    expect(true).toEqual(true)
+  })
+})
